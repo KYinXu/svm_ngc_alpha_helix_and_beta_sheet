@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "svm-ngc"
+version = "0.1.0"
+description = "QSAR-12 SVM inference for the expanded alpha-helix and beta-sheet model"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy==2.2.6",
+    "scikit-learn==1.7.2",
+    "joblib==1.5.3",
+    "propy3==1.1.1",
+    "setuptools==81.0.0",
+]
+
+[tool.setuptools]
+py-modules = ["run_inference", "descriptors", "model", "windows"]
